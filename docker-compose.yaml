@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  app:
+    image: 'account:latest'
+    container_name: account-api
+    ports:
+      - 9090:8080
+  fe:
+    image: 'account:1.0'
+    container_name: account-fe
+    ports:
+      - 9090:8080
